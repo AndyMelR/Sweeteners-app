@@ -1,0 +1,39 @@
+#contacto{
+
+	width: 100%;
+	height: 950px;
+	background-color: black;
+	overflow: hidden;
+}
+
+#contenedorContacto {
+	width: 1200px;
+	height: 600px;
+	/*background-color: lightgreen;*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 95px;
+	overflow: hidden;
+
+}
+
+#map {
+	float: left;
+}
+
+
+#textoContacto {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5rem;
+	color: white;
+}
+
+
+#formu {
+	width: 50%;
+	height: 525px;
+	/*background-color: pink;*/
+	float: left;
+	padding-top: 25px;
+	padding-left: 60px;
+}
