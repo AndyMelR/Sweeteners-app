@@ -1,0 +1,124 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) ), 
+    url(./Img/fondito.png);
+    background-size: cover;
+    }
+/* nav */
+.logo{
+    width: 150px;
+    height: 150px;
+    float: left;
+    display: block;
+    margin-left: 100px;
+    margin-top: 22px;
+    border-radius: 60%;
+}
+    /*menu */
+div.menu{
+    list-style-type: none;
+    text-align:right;
+    font-size: 25px; 
+    font-family: 'El Messiri', sans-serif;  
+}
+
+.inicio{
+    color: white;
+    margin-left: 2%;
+}
+
+.sobre{
+    color: white;
+    margin-left: 2%;
+}
+.servicios{
+    color: white;
+    margin-left: 2%;
+}
+.contact{
+    color: white;
+    margin-left: 2%;
+}
+
+.icono{
+   margin-left: 1%;
+}
+#sesion{
+    margin-left: 4%;
+}
+
+#carro{
+    margin-right: 1%;
+}
+/*datos personales */
+/*contenido comun*/
+.content{
+    width: 70%;
+    height: 300px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*caja 1*/
+.box1{
+    width: 200px;
+    height: 120px;
+    margin-left: 20px;
+    margin: 60px auto;
+}
+.cage{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(153, 72, 119);
+}
+.product{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; 
+   
+}
+
+.pro{
+    font-size: 20px; 
+}
+
+.pre{
+    font-size: 20px;
+}
+
+/*caja 2*/
+.box2{
+    width: 600px;
+    height: 300px;
+    
+}
+
+p{
+    text-align: left;
+    color: white;
+    font-size: 60px;
+    text-shadow: 1px 4px rgba(5, 5, 5, 0.555);
+    font-family: 'Dancing Script', cursive;
+}
+.form{
+    color: rgb(3, 3, 3);
+}
+
+    /*end form*/
+
+    /*footer*/
+    .footer{
+        display: flex;
+        justify-content: center;
+        margin-left: 5%; 
+        
+    }
+    
+   
