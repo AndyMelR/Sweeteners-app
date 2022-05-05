@@ -61,7 +61,7 @@ if(isset($_POST['Submit'])) {
         //Añadir la bbdd    
         $resultado = mysqli_query($mysqli, "INSERT INTO users(nombre, direccion,codigo,corrreo,provincia,
         ciudad,numero,fecha,cve) VALUES('$nombre','$direccion','$codigo','$correo','$provincia','$ciudad',
-        '$numero','$fecha','$cve');
+        '$numero','$fecha','$cve')");
         
         /*mensaje para usuarios*/
         echo "<font color='green'>La información ha sido añadida.";
