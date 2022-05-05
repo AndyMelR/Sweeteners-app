@@ -34,6 +34,6 @@ if(empty($cantidad) || empty($fecha) || empty($texto)) {
 		
 		/*mensaje para usuarios*/
 		echo "<font color='green'>La información ha sido añadida.";
-		echo "<br/><a href='index.php'>View Result</a>";
+		echo "<br/><a href='index.html'>View Result</a>";
     }
 }
