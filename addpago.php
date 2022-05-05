@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Add Data</title>
+    <title>Realización del pago</title>
 </head>
 
 <body>
