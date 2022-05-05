@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!--Importación de las fuentes-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+    </style>
+
+    <!--bootstrab-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Carrito</title>
+</head>
+<body>
+ <!--nav bar-->
+ <nav>
+    <a href="Index.html">
+        <img id="logo" src="Media/Imagenes/Logo.jpg" alt="">
+    </a>
+    <ul id="menu">
+
+        <li class="elementoMenu"><a href="Pagina-tartas.html">Tartas</a></li>
+        <li class="elementoMenu"><a href="Pagina-bollos.html">Bollería</a></li>
+        <li class="elementoMenu"><a href="Pagina-caramelos.html">Caramelos</a></li>
+        <li class="elementoMenu"><a href="Pagina-contacto.html">Sobre nosotros</a></li>
+
+        <a title="Login" href="Pagina-login.html"><img src="Media/Iconos/perfil.png" class="icono" id="sesion" width="50px" height="50px"></a>
+        <img src="Media/Iconos/lupa.png" class="icono"  id="lupa" width="50px" height="50px"></img>
+        <a title="Carrito" href="Pagina-carrito.html"><img src="Media/Iconos/carrito.png" class="icono" id="carro" width="45px" height="50px"/></a>
+
+
+    </ul>
+</nav>
+<!--nav bar final-->
+
+<!--background + formulario-->
+</br><br>
+<h2 class="tituloSeccion">Carrito</h2>
+<section class="content">
+    
+    <div class="box1">
+        <div class="cage"></div>
+
+        <div class="product">
+            <h3 class="pro">Producto</h3>
+        </br>
+            <h3 class="pre">Precio</h3>
+        </div>
+    </div>
+
+    <div class="box2">
+    
+        <form action= "addcarrito.php" method="post" class="form">
+        <input type="text" name="textfield" id="cantidad" placeholder="Cantidad" size="60">
+        <br>
+        <br>
+        <input type="date" name="fecha" id="fecha1">
+        <br><br>
+        <textarea name="area_de_texto" id="info" rows="5" cols="40">Informaci&oacute;n adicional</textarea>
+		<br><br>
+        <input id="boton" type="submit" value="Pagar">
+        
+        </form>
+    </div>
+</section>
+<br>
+<footer>
+    <div class="footer">
+        <a title="Instagram" href="https://www.instagram.com/"><img src="Media/Iconos/instagram.png" class="insta" width="50px" height="50px" alt=""/></a>
+        <a title="Twitter" href="https://twitter.com/"><img src="Media/Iconos/twitter.png" class="twit" width="50px" height="50px" alt=""/></a>
+    </div>  
+</footer>
+
+</body>
+</html>
