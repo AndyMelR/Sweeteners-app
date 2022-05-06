@@ -1,32 +1,31 @@
 <?php
-if(isset($_POST['correo'])) {
 
-// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-$email_to = "destinatario@sudominio.com";
-$email_subject = "Contacto desde el sitio web";
+$errores = '';
+$enviado ='';
 
-// Aquí se deberían validar los datos ingresados por el usuario
-if(!isset($_POST['nombre']) ||
-    !isset($_POST['correo']) ||
-    !isset($_POST['mensaje']))
-    {
+if(isset($_POST['submit'])) {
+    $nombre=$_POST['nombre'];
+    $correo = $_POST['correo'];
+    $mensaje = $_POST['mensaje'];
 
-    echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
-    echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
-    die();
+    if (!empty($nombre)) {//si hay contenido en nombre ejecutamos
+        $nombre= trim($nombre); //ejecuta trim y obvia los espacios vacios
+    }   else{
+        $errores .='Por favor introduce tu nombre <br />' ;
     }
+    if (!empty($correo)) { //si hay contenido en correo ejecutamos
+        $correo = filter_var($correo, FILTER_SANITIZE_EMAIL); //la funcion sanea el correo y evbita los caracteres especiales
 
-    $email_message = "Detalles del formulario de contacto:\n\n";
-    $email_message .= "Nombre: " . $_POST['nombre'] . "\n";
-    $email_message .= "E-mail: " . $_POST['correo'] . "\n";
-    $email_message .= "Tu mensaje: " . $_POST['mensaje'] . "\n\n";
+        if(!filter_var($correo, FILTER_VALIDATE_EMAIL)) {//esta funcion valida el correo y obtenemos false si no lo valida
+            $errores .= 'Por favor introduce un correo valido <br />';
 
-// Ahora se envía el e-mail usando la función mail() de PHP
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
+        }else{
+            $errores .='Por favor introduce un correo <br />';
+            
+        }
 
-echo "¡El formulario se ha enviado con éxito!";
+
+    }
 }
-?>
+    
+

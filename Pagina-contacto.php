@@ -56,11 +56,18 @@
                 <input type="email" name="correo" id="dato" placeholder="Correo: ">
 
                 <input type="text" name="mensaje" id="dato" maxlength="350" placeholder="Mensaje: ">
-                
+                <?php if (!empty($errores)) : ?>
                     <div class="alert error">
+                        <?php echo $errores; ?>
                     </div>
-                
-                <input id="botonEnviar" type="submit" value="Enviar">
+
+                <?php elseif ($enviado) : ?> //esta variable sera true cuando todos los datos esten rellenados correctamente
+                    <div class="alert success">
+                       <p>Enviado Correctamente</p>
+                    </div>
+                <?php endif ?>
+
+                <input id="botonEnviar" type="submit" class="btn btn-primary" value="Enviar">
 
             </form>
         </div>
