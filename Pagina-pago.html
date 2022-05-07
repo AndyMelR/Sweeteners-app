@@ -58,27 +58,26 @@
 
 
 
-    <div class="box2">
-        <h2>Datos personales</h2>
-        <form action="Pagina-gracias.html" class="form">
-        <input type="text" name="textfield" id="nombreApellidos" placeholder="Nombre y Apellidos" size="60">
-        <br><br>
-                <input type="text" name="textfield" id="direccion" placeholder="Direcci&oacute;n" size="60">
-                 <br><br>
-                <input type="text" name="textfield" id="codigoPostal" placeholder="C&oacute;digo Postal" size="60">
-        		<br><br>
-                <input type="email" name="textfield" id="email" placeholder="Correo" size="60">
-        		<br><br>
-                <input type="text" name="textfield" id="provincia" placeholder="Provincia" size="27">
-               
-                <input type="text" name="textfield" id="ciudad" placeholder="Ciudad" size="26">
-                 <br><br>
-                <input type="text" name="Number" id="numeroTarjeta" placeholder="N&uacute;mero de tarjeta" size="60">
-                <br><br>
-                <input type="date" name="date" id="fecha2" placeholder="Fecha">
+     <div class="box2">
+        <p>Datos personales</p>
+        <form action="addpago.php" class="form" method="post">
+            
+                <input type="text" name="nombre" placeholder="Nombre y Apellidos" size="60">
         
-                <input type="text" name="numer" id="cvc" placeholder="CVC" size="10">
-                  <br><br>
+                <input type="text" name="direccion" placeholder="Direcci&oacute;n" size="60">
+        
+                <input type="text" name="codigo" placeholder="C&oacute;digo Postal" size="60">
+        		
+                <input type="email" name="correo" placeholder="Correo" size="60">
+        		
+                <input type="text" name="provincia" placeholder="Provincia" size="27">
+                <input type="text" name="ciudad" placeholder="Ciudad" size="27">
+        
+                <input type="text" name="Numbero" placeholder="N&uacute;mero de tarjeta" size="30">
+                <input type="date" name="fecha" placeholder="Fecha">
+        </br>
+                <input type="text" name="cve" placeholder="CVC" size="10">
+        </br>
 				<input id="boton" type="submit" value="Pagar">
         </form>
     </div>
