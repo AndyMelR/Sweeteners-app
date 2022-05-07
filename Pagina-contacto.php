@@ -51,11 +51,11 @@
 
                 <p id="textoContacto"></p>
 
-                <input type="text" name="nombre" id="dato" placeholder="Nombre: ">
+                <input type="text" name="nombre" id="dato" placeholder="Nombre: " value="<?php if (!$enviado && isset($nombre)) echo $nombre ?>">
 
-                <input type="email" name="correo" id="dato" placeholder="Correo: ">
+                <input type="email" name="correo" id="dato" placeholder="Correo: " value="<?php if (!$enviado && isset($correo)) echo $correo ?>">
 
-                <input type="text" name="mensaje" id="dato" maxlength="350" placeholder="Mensaje: ">
+                <input type="text" name="mensaje" id="dato" maxlength="350" placeholder="Mensaje: " value="<?php if (!$enviado && isset($mensaje)) echo $mensaje ?>">
                 <?php if (!empty($errores)) : ?>
                     <div class="alert error">
                         <?php echo $errores; ?>
@@ -63,7 +63,7 @@
 
                 <?php elseif ($enviado) : ?> //esta variable sera true cuando todos los datos esten rellenados correctamente
                     <div class="alert success">
-                       <p>Enviado Correctamente</p>
+                        <p>Enviado Correctamente</p>
                     </div>
                 <?php endif ?>
 
