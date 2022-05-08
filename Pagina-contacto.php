@@ -61,7 +61,7 @@
                         <?php echo $errores; ?>
                     </div>
 
-                <?php elseif ($enviado) : ?> //esta variable sera true cuando todos los datos esten rellenados correctamente
+                <?php elseif ($enviado) : ?>
                     <div class="alert success">
                         <p>Enviado Correctamente</p>
                     </div>
