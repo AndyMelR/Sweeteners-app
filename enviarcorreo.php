@@ -15,6 +15,8 @@ if ($_POST['submit']) {
     } else {
         echo 'Fallo en el envío del mensaje';
     }
-    header("Location:index.html");
+   
 }
+header("Location:index.html");
+
 ?>
