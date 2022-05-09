@@ -5,6 +5,8 @@
 
 <body>
 <?php
+
+
     /*incluir la conexion de la bbdd*/
 include_once("conexionregistro.php");
 
